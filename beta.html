@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureUnlocker — Final Optimization in Progress</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #238636;
+            --accent-hover: #2ea44f;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #388bfd1a;
+            color: #58a6ff;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 20px;
+            border: 1px solid #388bfd33;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #f0f6fc;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #8b949e;
+            margin-bottom: 24px;
+        }
+
+        .highlight {
+            color: #f0f6fc;
+            font-weight: 500;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 480px) {
+            form {
+                flex-row: row;
+                display: grid;
+                grid-template-columns: 1fr auto;
+            }
+        }
+
+        input[type="email"] {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: #f0f6fc;
+            padding: 10px 16px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="email"]:focus {
+            border-color: #58a6ff;
+            box-shadow: 0 0 0 3px rgba(88,166,255,0.15);
+        }
+
+        button {
+            background-color: var(--accent-color);
+            border: 1px solid rgba(240,246,25fc,0.1);
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 10px 24px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            white-space: nowrap;
+        }
+
+        button:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            font-size: 12px;
+            color: #484f58;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">Kernel-Mode Optimization</span>
+        <h1>PureUnlocker Pro</h1>
+        
+        <p>Thank you for your interest! Our kernel-mode file driver is currently undergoing strict security compatibility testing on Windows 11 to ensure 100% stability and prevent any Blue Screen of Death (BSOD).</p>
+        
+        <p>As an independent developer, <span class="highlight">we are currently forming a legal business entity</span> to clear Microsoft's WHQL driver verification guidelines and secure EV code signing certificates.</p>
+        
+        <p>We expect to launch next week via Paddle secure global payment. Drop your email below to join the waitlist and get a <span class="highlight" style="color: #58a6ff;">50% Early-Bird Discount ($9.50 lifetime)</span> the moment we go live.</p>
+
+        <!-- 将下面的 YOUR_FORMSPREE_ID 替换为你自己的 Formspree ID -->
+        <form action="https://formspree.io" method="POST">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit">Notify Me</button>
+        </form>
+
+        <div class="footer">
+            © 2026 Baocai Studio. All rights reserved. Zero Telemetry. 100% Privacy.
+        </div>
+    </div>
+
+</body>
+</html>
